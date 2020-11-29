@@ -105,21 +105,21 @@
           <li class="our-work-list">
             <img src="images/img(7).jpg" width="370" height="294" alt="ПК" />
             <div class="our-work-direction">
-          <p class="our-work-discription">Десктопные приложения</p>
+              <p class="our-work-discription">Десктопные приложения</p>
             </div>
-        </li>
+          </li>
           <li class="our-work-list">
             <img src="images/img(1).jpg" width="370" height="294" alt="Лептоп" />
             <div class="our-work-direction">
-          <p class="our-work-discription">Мобильные приложения</p>
-           </div>
-        </li>
+              <p class="our-work-discription">Мобильные приложения</p>
+            </div>
+          </li>
           <li class="our-work-list">
             <img src="images/img(2).jpg" width="370" height="294" alt="Таблет" />
             <div class="our-work-direction">
-          <p class="our-work-discription">Дизайнерские решения</p>
-          </div>
-        </li>
+              <p class="our-work-discription">Дизайнерские решения</p>
+            </div>
+          </li>
         </ul>
       </section>
     </div>
@@ -385,68 +385,69 @@
     </footer>
   </div>
 
-<!-- <button data-open-modal>Открыть модалку</button> -->
+  <!-- <button data-open-modal>Открыть модалку</button> -->
 
-<div class="backdrop is-hidden" data-modal>
-  <div class="backdrop-modal">
-    <div class="modal">
-      <button type="button" class="close" data-modal-close>
-        <svg class="icon-modal-close" width="11" height="11">
-          <use href="./images/svg/sprite.svg#icon-modal-close"></use>
-        </svg>
-      </button>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop-modal">
+      <div class="modal">
+        <button type="button" class="close" data-modal-close>
+          <svg class="icon-modal-close" width="11" height="11">
+            <use href="./images/svg/sprite.svg#icon-modal-close"></use>
+          </svg>
+        </button>
 
-      <form action="#" name="form" class="form">
+        <form action="#" name="form" class="form">
 
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <span class="modal-form-wrapper">
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <span class="modal-form-wrapper">
+
+            <span class="form-field">
+              <label class="field-text" for="name">Имя</label>
+              <input type="text" name="name" id="name" class="modal-input" placeholder="Имя Фамилия" autofocus />
+              <svg class="modal-icon" width="12" height="12">
+                <use href="./images/svg/sprite.svg#icon-modal-body"></use>
+              </svg>
+            </span>
+
+          </span>
 
           <span class="form-field">
-            <label class="field-text" for="name">Имя</label>
-            <input type="text" name="name" id="name" class="modal-input" placeholder="Имя Фамилия" autofocus />
+            <label class="field-text" for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" class="modal-input" placeholder="+380..." />
             <svg class="modal-icon" width="12" height="12">
-              <use href="./images/svg/sprite.svg#icon-modal-body"></use>
+              <use href="./images/svg/sprite.svg#icon-modal-phone"></use>
             </svg>
           </span>
 
-        </span>
+          <span class="form-field">
+            <label class="field-text" for="mail">Почта</label>
+            <input type="email" name="mail" id="mail" class="modal-input" placeholder="E-mail" />
+            <svg class="modal-icon" width="12" height="12">
+              <use href="./images/svg/sprite.svg#icon-modal-envelope"></use>
+            </svg>
+          </span>
 
-        <span class="form-field">
-          <label class="field-text" for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" class="modal-input" placeholder="+380..." />
-          <svg class="modal-icon" width="12" height="12">
-            <use href="./images/svg/sprite.svg#icon-modal-phone"></use>
-          </svg>
-        </span>
+          <span class="form-field">
+            <label class="field-text" for="message">Комментарий</label>
+            <textarea id="message" class="field" name="message" cols="30" rows="5"
+              placeholder="Введите текст"></textarea>
+          </span>
 
-        <span class="form-field">
-          <label class="field-text" for="mail">Почта</label>
-          <input type="email" name="mail" id="mail" class="modal-input" placeholder="E-mail" />
-          <svg class="modal-icon" width="12" height="12">
-            <use href="./images/svg/sprite.svg#icon-modal-envelope"></use>
-          </svg>
-        </span>
+          <div class="checkbox-custom">
+            <label class="checkbox-custom">
+              <input class="checkbox" type="checkbox" name="topic" value="css" />
+              <span class="icon"></span>
+              <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="user-policy-link" href="#">Условия
+                  договора</a></span>
+            </label>
+          </div>
 
-        <span class="form-field">
-          <label class="field-text" for="message">Комментарий</label>
-          <textarea id="message" class="field" name="message" cols="30" rows="5" placeholder="Введите текст"></textarea>
-        </span>
-
-        <div class="checkbox-custom">
-          <label class="checkbox-custom">
-            <input class="checkbox" type="checkbox" name="topic" value="css" />
-            <span class="icon"></span>
-            <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="user-policy-link" href="#">Условия
-                договора</a></span>
-          </label>
-        </div>
-
-        <button type="submit" class="hero-button submit">Отправить</button>
-      </form>
+          <button type="submit" class="hero-button submit">Отправить</button>
+        </form>
+      </div>
     </div>
-  </div>
 
-<script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
