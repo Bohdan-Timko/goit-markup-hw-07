@@ -1,16 +1,21 @@
 .our-crew {
   background-color: var(--section-crew);
+  margin: 0;
+  padding: 0;
   padding-top: 94px;
   padding-bottom: 94px;
   margin-bottom: 94px;
+}
+.team-members {
+  display: block;
 }
 
 .team {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
+  justify-content: center;
 }
-.members {
+.member {
   box-sizing: border-box;
   text-align: center;
   background-color: #fff;

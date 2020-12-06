@@ -102,8 +102,6 @@ ul {
   list-style: none;
 }
 
-/* *********modal window
-******************** */
 .backdrop {
   position: fixed;
   overflow-y: auto;
@@ -238,7 +236,19 @@ ul {
   font-size: 12px;
   line-height: 1.15;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: var(--grey);
+}
+
+.modal-submition {
+  display: inline-block;
+  margin-top: 30px;
+  color: var(--accent-text-cl);
+  color: white;
+  display: block;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--accent-text-cl);
 }
 
 .form-field .modal-input:hover,
@@ -288,63 +298,6 @@ ul {
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   display: inline-block;
-}
-
-.submit {
-  display: block;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* *****checkbox***** */
-.checkbox-custom {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.field {
-  display: flex;
-  align-items: center;
-}
-
-.checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.icon {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
-  border: 2px solid #2a2a2a;
-  border-radius: 4px;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.checkbox:checked + .icon {
-  border-color: transparent;
-  background-color: var(--accent-cl);
-  background-image: url("../images/svg/sprite.svg#icon-check");
-  background-size: contain;
-  background-origin: border-box;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.user-policy-link {
-  margin-left: 4px;
 }
 
 .header {
@@ -461,7 +414,7 @@ ul {
   padding-top: 200px;
 }
 
-.hero-button {
+.main-button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -479,7 +432,7 @@ ul {
   height: 50px;
 }
 
-.hero-button {
+.main-button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -495,12 +448,22 @@ ul {
   border: none;
   width: 200px;
   height: 50px;
+}
+
+.submition {
+  display: inline-block;
+  margin-top: 30px;
+  color: var(--accent-text-cl);
+  color: white;
+  margin-left: 12px;
+  margin-right: 10px;
+  background-color: var(--accent-text-cl);
 }
 
 .btn-nav:hover,
 .btn-nav:focus,
-.hero-button:hover,
-.hero-button:focus {
+.main-button:hover,
+.main-button:focus {
   color: var(--white);
   background-color: var(--accent-text-cl);
   font-weight: 700;
@@ -508,8 +471,8 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.main-button:hover,
+.main-button:focus {
   color: var(--white);
   background-color: var(--accent-text-cl);
   font-weight: 700;
@@ -609,18 +572,24 @@ ul {
 
 .our-crew {
   background-color: var(--section-crew);
+  margin: 0;
+  padding: 0;
   padding-top: 94px;
   padding-bottom: 94px;
   margin-bottom: 94px;
 }
 
+.team-members {
+  display: block;
+}
+
 .team {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
+  justify-content: center;
 }
 
-.members {
+.member {
   box-sizing: border-box;
   text-align: center;
   background-color: #fff;
@@ -775,6 +744,7 @@ ul {
   background-color: var(--background);
   color: var(--white);
   display: flex;
+  justify-content: space-between;
 }
 
 .basement-info {
@@ -786,6 +756,7 @@ ul {
 }
 
 .basement-icons {
+  padding: 0;
   display: flex;
   justify-content: center;
 }
@@ -876,10 +847,9 @@ nav .current,
   color: var(--accent-text-cl);
 }
 
-.basement-icons {
+.basement-icons-svg {
   padding: 0;
   margin: 0;
-  margin-right: auto;
   justify-content: start;
   width: 20px;
   height: 20px;
@@ -889,7 +859,7 @@ nav .current,
   margin-left: 70px;
 }
 
-.social-headline {
+.social-header {
   margin: 0;
   padding: 0;
   font-family: Roboto;
@@ -900,6 +870,16 @@ nav .current,
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-bottom: 20px;
+}
+
+.submition {
+  display: inline-block;
+  margin-top: 30px;
+  color: var(--accent-text-cl);
+  color: white;
+  margin-left: 12px;
+  margin-right: 10px;
+  background-color: var(--accent-text-cl);
 }
 
 /****** Styles for portfolio page ******/
@@ -1037,23 +1017,23 @@ nav .current,
   padding-bottom: 0;
 }
 
-/* *********subscribe form
-************** */
 .subscribe {
-  position: relative;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding: 0;
+  margin: 0;
   height: 50px;
-  display: flex;
-  align-items: center;
+  margin-left: 60px;
+  margin-left: 93px;
 }
 
-.submit {
-  background: #2196f3;
-  color: white;
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  columns: var(--accent-text-cl);
 }
 
 .subscribe-title {
+  display: block;
   margin: 0;
   font-weight: 700;
   font-size: 14px;
@@ -1061,26 +1041,31 @@ nav .current,
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  position: absolute;
-  bottom: 100%;
+  align-items: center;
 }
 
 .subscribe-mail {
+  display: inline-block;
   width: 358px;
   height: 50px;
-  outline: none;
   color: var(--primary-white-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--dark-bg-cl);
+  outline: none;
   margin-right: 12px;
 }
 
-.icon-send-svg {
-  fill: var(--primary-white-color);
-  padding: 10px, 13px, 28px, 13px;
+.submition {
+  display: inline-block;
+  margin-top: 30px;
+  color: var(--accent-text-cl);
+  color: white;
+  margin-left: 12px;
+  margin-right: 10px;
+  background-color: var(--accent-text-cl);
 }
 
 .subscribe .subscribe-mail:hover,
@@ -1088,5 +1073,17 @@ nav .current,
   border: 1px solid var(--accent-text-cl);
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-mail:valid {
+  color: green;
+}
+
+.subscribe-mail:invalid {
+  color: red;
+}
+
+.icon-send-svg {
+  fill: var(--white);
 }
 /*# sourceMappingURL=main.css.map */

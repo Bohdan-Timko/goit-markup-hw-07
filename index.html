@@ -40,7 +40,7 @@
     <div class="container">
       <section class="hero">
         <h1 class="hero-title main-1200">эффективные решения <br>для вашего бизнеса</h1>
-        <button class="hero-button" data-modal-open>Заказать услугу</button>
+        <button class="main-button" data-modal-open>Заказать услугу</button>
       </section>
     </div>
     <div class="container">
@@ -123,11 +123,11 @@
         </ul>
       </section>
     </div>
-    <div class="container our-crew">
-      <section class="main-1200">
+    <div class="container">
+    <section class="our-crew">
         <h2 class="section-title team-members">Наша команда</h2>
-        <ul class="team">
-          <li class="members">
+        <ul class="team main-1200">
+          <li class="member">
             <img src="images/img(3).jpg" width="270" height="260" alt="Игорь Демьяненко" />
             <h3 class="names">Игорь Демьяненко</h3>
             <p class="profession" lang="en">Product Designer</p>
@@ -162,7 +162,7 @@
               </li>
             </ul>
           </li>
-          <li class="members">
+          <li class="member">
             <img src="images/img(4).jpg" width="270" height="260" alt="Ольга Репина" />
             <h3 class="names">Ольга Репина</h3>
             <p class="profession" lang="en">Frontend Developer</p>
@@ -197,7 +197,7 @@
               </li>
             </ul>
           </li>
-          <li class="members">
+          <li class="member">
             <img src="images/img(5).jpg" width="270" height="260" alt="Николай тарасов" />
             <h3 class="names">Николай тарасов</h3>
             <p class="profession" lang="en">Marketing</p>
@@ -232,7 +232,7 @@
               </li>
             </ul>
           </li>
-          <li class="members">
+          <li class="member">
             <img src="images/img(6).jpg" width="270" height="260" alt="Михаил Ермаков" />
             <h3 class="names">Михаил Ермаков</h3>
             <p class="profession" lang="en">UI Designer</p>
@@ -269,7 +269,7 @@
           </li>
         </ul>
       </section>
-    </div>
+      </div>
   </main>
   <div class="container">
     <section class="main-1200 clients-section">
@@ -337,7 +337,7 @@
             </address>
           </div>
           <div class="footer-icons">
-            <h3 class="social-headline">Присоединяйтесь</h3>
+            <h3 class="social-header">Присоединяйтесь</h3>
             <ul class="basement-icons">
               <li class="social-icon">
                 <a class="social-basement" href="">
@@ -371,9 +371,9 @@
           </div>
           <div class="subscribe">
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-            <form action="#" id="subscribe-form">
+            <form action="" id="subscribe-form">
               <input type="email" class="subscribe-mail" name="subscribe-mail" placeholder="E-mail">
-              <button type="submit" class="hero-button submit" form="subscribe">Подписаться
+              <button type="submit" class="main-button submition" form="subscribe">Подписаться
                 <svg class="icon-send-svg" width="24" height="24">
                   <use href="./images/svg/sprite.svg#icon-send"></use>
                 </svg>
@@ -395,12 +395,12 @@
             <use href="./images/svg/sprite.svg#icon-modal-close"></use>
           </svg>
         </button>
-
+  
         <form action="#" name="form" class="form">
-
+  
           <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
           <span class="modal-form-wrapper">
-
+  
             <span class="form-field">
               <label class="field-text" for="name">Имя</label>
               <input type="text" name="name" id="name" class="modal-input" placeholder="Имя Фамилия" autofocus />
@@ -408,9 +408,9 @@
                 <use href="./images/svg/sprite.svg#icon-modal-body"></use>
               </svg>
             </span>
-
+  
           </span>
-
+  
           <span class="form-field">
             <label class="field-text" for="tel">Телефон</label>
             <input type="tel" name="tel" id="tel" class="modal-input" placeholder="+380..." />
@@ -418,7 +418,7 @@
               <use href="./images/svg/sprite.svg#icon-modal-phone"></use>
             </svg>
           </span>
-
+  
           <span class="form-field">
             <label class="field-text" for="mail">Почта</label>
             <input type="email" name="mail" id="mail" class="modal-input" placeholder="E-mail" />
@@ -426,13 +426,12 @@
               <use href="./images/svg/sprite.svg#icon-modal-envelope"></use>
             </svg>
           </span>
-
+  
           <span class="form-field">
             <label class="field-text" for="message">Комментарий</label>
-            <textarea id="message" class="field" name="message" cols="30" rows="5"
-              placeholder="Введите текст"></textarea>
+            <textarea id="message" class="field" name="message" cols="30" rows="5" placeholder="Введите текст"></textarea>
           </span>
-
+  
           <div class="checkbox-custom">
             <label class="checkbox-custom">
               <input class="checkbox" type="checkbox" name="topic" value="css" />
@@ -441,8 +440,7 @@
                   договора</a></span>
             </label>
           </div>
-
-          <button type="submit" class="hero-button submit">Отправить</button>
+          <button type="submit" class="main-button modal-submition">Отправить</button>
         </form>
       </div>
     </div>
